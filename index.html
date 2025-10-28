@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akash | Tech Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="container">
+      <h1 class="logo">Akash<span>.</span></h1>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="menu-toggle" id="menu">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Hello, I’m <span>Akash</span></h2>
+      <p>
+        Passionate <b>Tech Developer</b> & B.Tech CSE student from Hindustan College.
+        I specialize in building modern, AI-powered and web-based solutions.
+      </p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="glass-section">
+    <h2>About Me</h2>
+    <p>
+      Hi! I’m <b>Akash</b>, a B.Tech Computer Science student passionate about web
+      and AI technologies. I love creating interactive and innovative solutions
+      using clean design and smart code.
+    </p>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="glass-section">
+    <h2>Education</h2>
+    <div class="edu-card">
+      <h3>Hindustan College of Engineering</h3>
+      <p>B.Tech in Computer Science (2022–2026)</p>
+      <p>CGPA: 8.7 / 10</p>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="glass-section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" />
+        <p>HTML</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" />
+        <p>CSS</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JS" />
+        <p>JavaScript</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919852.png" alt="Python" />
+        <p>Python</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React" />
+        <p>React</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="Node.js" />
+        <p>Node.js</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="glass-section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>AI Resume Analyzer</h3>
+        <p>
+          Built a web app that uses NLP to evaluate resumes and provide smart suggestions.
+        </p>
+      </div>
+      <div class="project-card">
+        <h3>Smart Attendance System</h3>
+        <p>
+          Developed an IoT-based face recognition system for attendance tracking.
+        </p>
+      </div>
+      <div class="project-card">
+        <h3>TaskFlow Web App</h3>
+        <p>
+          Designed a real-time collaborative task manager using React & Firebase.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>Let’s build something amazing together!</p>
+    <div class="contact-container">
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:akashj@gmail.com">akashj@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/akash</a></p>
+        <p><strong>GitHub:</strong> <a href="#">github.com/akash-dev</a></p>
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Twitter" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Akash | Designed with ❤️ & AI</p>
+  </footer>
+
+  <script>
+    // Scroll header animation
+    window.addEventListener("scroll", () => {
+      document.getElementById("header").classList.toggle("scrolled", window.scrollY > 50);
+    });
+
+    // Mobile menu toggle
+    const menu = document.getElementById("menu");
+    const nav = document.querySelector(".navbar");
+    menu.addEventListener("click", () => nav.classList.toggle("active"));
+  </script>
+</body>
+</html>
